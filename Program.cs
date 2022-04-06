@@ -17,7 +17,8 @@ namespace ClassExample040422
             Console.WriteLine(anketa.PrintInfo());
 
             clsAnketa anketa1 = new clsAnketa("Немтырева К.А.", 
-                 "Ликино-Дулево", 2, "ИСП.20А", "+79771801465");
+                 "Ликино-Дулево", 2003, 06, 29,
+                 2, "ИСП.20А", "+79771801465");
 
             Console.WriteLine(anketa1.PrintInfo());
 

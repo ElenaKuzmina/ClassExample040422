@@ -34,11 +34,11 @@ namespace ClassExample040422
             phone = "+70000000000";
         }
         //конструктор с параметрами
-        public clsAnketa(string f,  string ad,
+        public clsAnketa(string f,  string ad, int year, int month, int day,
             byte k, string g, string ph)
         {
             fio = f;
-           
+            birthday = new DateTime(year, month, day);
             adress = ad;
             kurs = k;
             group = g;
@@ -47,9 +47,9 @@ namespace ClassExample040422
         //вывод информации об объекте
         public string PrintInfo()
         {
-            return $"Студент: {fio}  " +
-                $"Курс: {kurs}" +
-                $"Группа: {group}" +
+            return $"Студент: {fio}  Дата рождения {birthday} " + 
+                $"Курс: {kurs} " +
+                $"Группа: {group} " +
                 $"Телефон: {phone}";
         }
 
